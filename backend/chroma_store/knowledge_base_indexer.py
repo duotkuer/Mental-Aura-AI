@@ -37,7 +37,7 @@ def create_and_save_groq_index(pdf_path: str = "mental health.pdf", index_path: 
     and saves a Chroma vector store.
     """
     # Load the PDF document
-    pdf_path = r"C:\Users\HomePC\Desktop\LuxDevHQ Internship\Mental Health Model\Mental Health.pdf"
+    pdf_path = "Mental Health Model\Mental Health.pdf"
     loader = PyPDFLoader(pdf_path)
     documents = loader.load()
 
