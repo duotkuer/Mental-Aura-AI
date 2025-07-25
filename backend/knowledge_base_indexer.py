@@ -31,7 +31,7 @@ load_dotenv()
 #API key
 GROK_API_KEY = os.getenv("GROQ_API_KEY")
 
-def create_and_save_groq_index(pdf_path: str = "Mental Health.pdf", index_path: str = "chroma_store"):
+def create_and_save_groq_index(pdf_path: str = "Mental Health.pdf", index_path: str = "chroma_index"):
     """
     Loads a PDF document, splits it into chunks, creates embeddings using Groq,
     and saves a Chroma vector store.
