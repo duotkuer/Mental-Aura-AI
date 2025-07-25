@@ -1,7 +1,3 @@
-import pysqlite3
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
@@ -59,7 +55,7 @@ async def startup_event():
     global vector_store, rag_chain
 
     # Check if Chroma index exists
-    index_path = "chroma_index"
+    index_path = r"C:\Users\HomePC\Desktop\LuxDevHQ Internship\Mental Health Model\backend\chroma_store"
     if not os.path.exists(index_path):
         print(f"Chroma index not found at {index_path}. Please run knowledge_base_indexer.py first.")
         raise RuntimeError("Chroma index not found. Cannot start application without knowledge base.")

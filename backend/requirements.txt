@@ -1,12 +1,10 @@
 # requirements.txt
 fastapi
 uvicorn[standard]
+chromadb
 langchain
-langchain_community
 langchain_chroma
-langchain_groq
 langchain-openai
-pysqlite3-binary
 faiss-cpu # Or faiss-gpu if you have a compatible GPU
 python-dotenv
 tiktoken # For token counting in LangChain
