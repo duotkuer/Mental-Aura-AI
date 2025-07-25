@@ -3,6 +3,7 @@ fastapi
 uvicorn[standard]
 langchain
 langchain_community
+langchain_chroma
 langchain_groq
 langchain-openai
 faiss-cpu # Or faiss-gpu if you have a compatible GPU
