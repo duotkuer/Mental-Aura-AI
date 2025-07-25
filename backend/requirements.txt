@@ -1,5 +1,6 @@
 # requirements.txt
 fastapi
+sqlite3.35.0.
 uvicorn[standard]
 chromadb
 langchain
