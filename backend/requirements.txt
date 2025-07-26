@@ -7,6 +7,7 @@ langchain
 langchain_chroma
 langchain_groq
 langchain-openai
+langchain_community
 faiss-cpu # Or faiss-gpu if you have a compatible GPU
 python-dotenv
 tiktoken # For token counting in LangChain
